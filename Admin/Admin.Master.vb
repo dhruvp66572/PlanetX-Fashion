@@ -3,12 +3,12 @@ Partial Class Admin
     Inherits System.Web.UI.MasterPage
 
     Private Sub Admin_Load(sender As Object, e As EventArgs) Handles Me.Load
-        If Session("aid") Is Nothing Then
-            Response.Redirect("Admin_Login.aspx")
-        Else
-            isAuthentic()
-            SqlDataSource1.DataBind()
-        End If
+        'If Session("aid") Is Nothing Then
+        '    Response.Redirect("Admin_Login.aspx")
+        'Else
+        '    isAuthentic()
+        '    SqlDataSource1.DataBind()
+        'End If
     End Sub
 
     Private Sub isAuthentic()
